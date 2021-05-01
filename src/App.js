@@ -2,6 +2,8 @@ import React from 'react';
 import Fade from "react-reveal/Fade";
 import { Parallax } from 'react-parallax'
 import Container from "react-bootstrap/Container";
+import Skills from "./pages/skills/skills.component";
+import Slide from "react-reveal/Slide";
 import './App.css';
 // components
 import MyNavbar from './components/my-navbar/mynavbar.component';
@@ -29,6 +31,14 @@ const App=()=> {
             </Container>
           </div>
         </Parallax>
+      </div>
+      <Container className="container-box rounded">
+        <Slide bottom duration={500}>
+          <hr />
+          <Skills />
+        </Slide>
+      </Container>
+      <div>
       </div>
     </div>
   );
